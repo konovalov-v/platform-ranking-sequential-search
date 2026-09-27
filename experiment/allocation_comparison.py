@@ -12,8 +12,8 @@ import time
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE
-SOURCE = ROOT / 'power_helpers.py'
+ROOT = HERE.parent
+SOURCE = HERE / 'power_helpers.py'
 spec = importlib.util.spec_from_file_location('allocation_frozen_power', SOURCE)
 power = importlib.util.module_from_spec(spec)
 sys.modules[spec.name] = power
@@ -174,7 +174,7 @@ def payment_and_counts():
     return results
 
 
-OUT = HERE / "results/allocation"
+OUT = ROOT / "results/allocation"
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -184,8 +184,8 @@ def main():
     ap.add_argument('--seed', type=int, default=1710)
     ap.add_argument('--validation-only', action='store_true')
     args = ap.parse_args()
-    paths = [SOURCE, ROOT/'experiment_analysis.py',
-             ROOT/'experiment_model.py',
+    paths = [SOURCE, HERE/'experiment_analysis.py',
+             HERE/'experiment_model.py',
              ROOT/'results/calibration/policy_thresholds.npz',
              ROOT/'results/calibration/finite_cells.json']
     before = {str(p.relative_to(ROOT)): hash_file(p) for p in paths}
