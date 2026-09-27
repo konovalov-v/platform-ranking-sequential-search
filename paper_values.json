@@ -1,0 +1,1462 @@
+{
+  "predictions": [
+    [
+      "Nearest-first",
+      "1",
+      "0",
+      "3.2288",
+      "0.9374",
+      "77.1557",
+      "35.87",
+      "35.87",
+      "35.87",
+      "35.87"
+    ],
+    [
+      "Nearest-first",
+      "1",
+      "2",
+      "3.0734",
+      "0.9087",
+      "72.8304",
+      "33.87",
+      "31.87",
+      "29.87",
+      "27.87"
+    ],
+    [
+      "Nearest-first",
+      "1",
+      "4",
+      "2.9268",
+      "0.8717",
+      "68.8941",
+      "31.87",
+      "27.87",
+      "23.87",
+      "19.87"
+    ],
+    [
+      "Nearest-first",
+      "4",
+      "0",
+      "2.6002",
+      "0.9374",
+      "68.5504",
+      "21.72",
+      "21.72",
+      "21.72",
+      "21.72"
+    ],
+    [
+      "Nearest-first",
+      "4",
+      "2",
+      "2.4794",
+      "0.9087",
+      "64.6326",
+      "19.72",
+      "17.72",
+      "15.72",
+      "13.72"
+    ],
+    [
+      "Nearest-first",
+      "4",
+      "4",
+      "2.3662",
+      "0.8717",
+      "61.0792",
+      "17.72",
+      "13.72",
+      "9.72",
+      "5.72"
+    ],
+    [
+      "Farthest-first",
+      "1",
+      "0",
+      "3.2288",
+      "0.9374",
+      "77.1557",
+      "35.87",
+      "35.87",
+      "35.87",
+      "35.87"
+    ],
+    [
+      "Farthest-first",
+      "1",
+      "2",
+      "3.3956",
+      "0.9087",
+      "72.4845",
+      "30.72",
+      "31.78",
+      "32.83",
+      "33.87"
+    ],
+    [
+      "Farthest-first",
+      "1",
+      "4",
+      "3.5782",
+      "0.8717",
+      "68.2255",
+      "26.05",
+      "27.95",
+      "29.89",
+      "31.87"
+    ],
+    [
+      "Farthest-first",
+      "4",
+      "0",
+      "2.6002",
+      "0.9374",
+      "68.5504",
+      "21.72",
+      "21.72",
+      "21.72",
+      "21.72"
+    ],
+    [
+      "Farthest-first",
+      "4",
+      "2",
+      "2.7298",
+      "0.9087",
+      "63.4425",
+      "16.05",
+      "17.36",
+      "18.59",
+      "19.72"
+    ],
+    [
+      "Farthest-first",
+      "4",
+      "4",
+      "2.8690",
+      "0.8717",
+      "58.7116",
+      "10.66",
+      "13.15",
+      "15.50",
+      "17.72"
+    ]
+  ],
+  "accounting": [
+    [
+      "Nearest-first",
+      "1",
+      "0",
+      "3.2288",
+      "0.0000",
+      "35.2369",
+      "112.3926",
+      "2.4077"
+    ],
+    [
+      "Nearest-first",
+      "1",
+      "2",
+      "3.0734",
+      "4.1335",
+      "33.5743",
+      "106.4048",
+      "2.2744"
+    ],
+    [
+      "Nearest-first",
+      "1",
+      "4",
+      "2.9268",
+      "7.4705",
+      "31.7326",
+      "100.6267",
+      "2.1424"
+    ],
+    [
+      "Nearest-first",
+      "4",
+      "0",
+      "10.4008",
+      "0.0000",
+      "36.6702",
+      "105.2206",
+      "2.1836"
+    ],
+    [
+      "Nearest-first",
+      "4",
+      "2",
+      "9.9175",
+      "3.7383",
+      "35.3232",
+      "99.9558",
+      "2.0569"
+    ],
+    [
+      "Nearest-first",
+      "4",
+      "4",
+      "9.4647",
+      "6.7285",
+      "33.7517",
+      "94.8309",
+      "1.9296"
+    ],
+    [
+      "Farthest-first",
+      "1",
+      "0",
+      "3.2288",
+      "0.0000",
+      "35.2369",
+      "112.3926",
+      "2.5923"
+    ],
+    [
+      "Farthest-first",
+      "1",
+      "2",
+      "3.3956",
+      "4.4740",
+      "33.2574",
+      "105.7419",
+      "2.4618"
+    ],
+    [
+      "Farthest-first",
+      "1",
+      "4",
+      "3.5782",
+      "8.0695",
+      "31.1510",
+      "99.3765",
+      "2.3142"
+    ],
+    [
+      "Farthest-first",
+      "4",
+      "0",
+      "10.4008",
+      "0.0000",
+      "36.6702",
+      "105.2206",
+      "2.8164"
+    ],
+    [
+      "Farthest-first",
+      "4",
+      "2",
+      "10.9191",
+      "4.9277",
+      "34.3222",
+      "97.7647",
+      "2.7114"
+    ],
+    [
+      "Farthest-first",
+      "4",
+      "4",
+      "11.4762",
+      "9.0498",
+      "31.7865",
+      "90.4981",
+      "2.5953"
+    ]
+  ],
+  "classes": [
+    [
+      "hotels",
+      "9.23",
+      "2.39",
+      "[2.13, 2.71]",
+      "0.335",
+      "2.9",
+      "56.8"
+    ],
+    [
+      "beauty",
+      "6.52",
+      "1.42",
+      "[1.28, 1.61]",
+      "0.359",
+      "5.1",
+      "9.3"
+    ],
+    [
+      "household_services",
+      "5.12",
+      "1.14",
+      "[1.07, 1.25]",
+      "0.324",
+      "4.5",
+      "19.8"
+    ],
+    [
+      "health",
+      "15.20",
+      "1.03",
+      "[0.77, 1.34]",
+      "0.402",
+      "3.5",
+      "18.6"
+    ],
+    [
+      "auto_services",
+      "6.97",
+      "0.91",
+      "[0.86, 1.00]",
+      "0.378",
+      "3.6",
+      "25.1"
+    ],
+    [
+      "realty",
+      "2.56",
+      "0.89",
+      "[0.81, 0.99]",
+      "0.351",
+      "2.2",
+      "17.3"
+    ],
+    [
+      "government",
+      "7.10",
+      "0.82",
+      "[0.71, 0.95]",
+      "0.465",
+      "2.7",
+      "32.2"
+    ],
+    [
+      "groceries",
+      "5.42",
+      "0.76",
+      "[0.68, 0.89]",
+      "0.324",
+      "5.4",
+      "19.3"
+    ],
+    [
+      "shopping",
+      "21.84",
+      "0.74",
+      "[0.59, 0.81]",
+      "0.450",
+      "3.3",
+      "22.1"
+    ],
+    [
+      "other",
+      "9.71",
+      "0.72",
+      "[0.48, 1.04]",
+      "0.399",
+      "4.2",
+      "37.0"
+    ],
+    [
+      "education",
+      "9.90",
+      "0.69",
+      "[0.43, 1.05]",
+      "0.361",
+      "4.8",
+      "56.4"
+    ],
+    [
+      "pharmacy",
+      "1.85",
+      "0.58",
+      "[0.56, 0.60]",
+      "0.521",
+      "4.9",
+      "18.8"
+    ],
+    [
+      "delivery",
+      "4.01",
+      "0.56",
+      "[0.38, 0.76]",
+      "0.505",
+      "5.7",
+      "20.7"
+    ],
+    [
+      "enterprise",
+      "10.83",
+      "0.55",
+      "[0.49, 0.64]",
+      "0.453",
+      "3.3",
+      "35.9"
+    ],
+    [
+      "gas_stations",
+      "1.51",
+      "0.43",
+      "[0.38, 0.48]",
+      "0.313",
+      "3.3",
+      "18.6"
+    ],
+    [
+      "leisure",
+      "57.97",
+      "0.40",
+      "[0.34, 0.48]",
+      "0.378",
+      "15.3",
+      "26.1"
+    ],
+    [
+      "transport",
+      "6.58",
+      "0.39",
+      "[0.31, 0.45]",
+      "0.523",
+      "1.6",
+      "9.9"
+    ],
+    [
+      "food",
+      "72.11",
+      "0.37",
+      "[0.35, 0.41]",
+      "0.270",
+      "15.0",
+      "11.9"
+    ],
+    [
+      "sight",
+      "20.04",
+      "0.35",
+      "[0.30, 0.39]",
+      "0.168",
+      "10.6",
+      "15.3"
+    ],
+    [
+      "atms",
+      "9.02",
+      "0.32",
+      "[0.21, 0.44]",
+      "0.383",
+      "6.7",
+      "37.5"
+    ]
+  ],
+  "ranking_curves": [
+    {
+      "N": 4,
+      "ranking_key": "nearest",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": -2.4399999999999995
+    },
+    {
+      "N": 4,
+      "ranking_key": "nearest",
+      "gamma": 0.4,
+      "mean_depth": 1.47894,
+      "integrated_mean": 1.476666666666667,
+      "local_derivative_at_zero": -2.4399999999999995
+    },
+    {
+      "N": 4,
+      "ranking_key": "nearest",
+      "gamma": 0.8,
+      "mean_depth": 1.2013333333333334,
+      "integrated_mean": 1.2,
+      "local_derivative_at_zero": -2.4399999999999995
+    },
+    {
+      "N": 4,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": -1.8355555555555552
+    },
+    {
+      "N": 4,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.4,
+      "mean_depth": 1.45124,
+      "integrated_mean": 1.449044201580623,
+      "local_derivative_at_zero": -1.8355555555555552
+    },
+    {
+      "N": 4,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.8,
+      "mean_depth": 1.0,
+      "integrated_mean": 1.0,
+      "local_derivative_at_zero": -1.8355555555555552
+    },
+    {
+      "N": 4,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": -1.9733333333333327
+    },
+    {
+      "N": 4,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.4,
+      "mean_depth": 1.4790666666666668,
+      "integrated_mean": 1.4783788744096134,
+      "local_derivative_at_zero": -1.9733333333333327
+    },
+    {
+      "N": 4,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.8,
+      "mean_depth": 1.0,
+      "integrated_mean": 1.0,
+      "local_derivative_at_zero": -1.9733333333333327
+    },
+    {
+      "N": 4,
+      "ranking_key": "centre_out",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": -0.17333333333333312
+    },
+    {
+      "N": 4,
+      "ranking_key": "centre_out",
+      "gamma": 0.4,
+      "mean_depth": 2.522813333333333,
+      "integrated_mean": 2.515710917063953,
+      "local_derivative_at_zero": -0.17333333333333312
+    },
+    {
+      "N": 4,
+      "ranking_key": "centre_out",
+      "gamma": 0.8,
+      "mean_depth": 3.0,
+      "integrated_mean": 3.0,
+      "local_derivative_at_zero": -0.17333333333333312
+    },
+    {
+      "N": 4,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": 1.8355555555555558
+    },
+    {
+      "N": 4,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.4,
+      "mean_depth": 2.122306666666667,
+      "integrated_mean": 2.121915355993978,
+      "local_derivative_at_zero": 1.8355555555555558
+    },
+    {
+      "N": 4,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.8,
+      "mean_depth": 2.0,
+      "integrated_mean": 2.0,
+      "local_derivative_at_zero": 1.8355555555555558
+    },
+    {
+      "N": 4,
+      "ranking_key": "local_decline",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": -2.7688888888888887
+    },
+    {
+      "N": 4,
+      "ranking_key": "local_decline",
+      "gamma": 0.4,
+      "mean_depth": 1.4686133333333333,
+      "integrated_mean": 1.4666666666666668,
+      "local_derivative_at_zero": -2.7688888888888887
+    },
+    {
+      "N": 4,
+      "ranking_key": "local_decline",
+      "gamma": 0.8,
+      "mean_depth": 1.2013333333333334,
+      "integrated_mean": 1.2,
+      "local_derivative_at_zero": -2.7688888888888887
+    },
+    {
+      "N": 4,
+      "ranking_key": "farthest",
+      "gamma": 0.0,
+      "mean_depth": 2.1225733333333334,
+      "integrated_mean": 2.118444444444444,
+      "local_derivative_at_zero": 2.44
+    },
+    {
+      "N": 4,
+      "ranking_key": "farthest",
+      "gamma": 0.4,
+      "mean_depth": 3.47102,
+      "integrated_mean": 3.4714254366293096,
+      "local_derivative_at_zero": 2.44
+    },
+    {
+      "N": 4,
+      "ranking_key": "farthest",
+      "gamma": 0.8,
+      "mean_depth": 3.9341333333333335,
+      "integrated_mean": 3.933333333333333,
+      "local_derivative_at_zero": 2.44
+    },
+    {
+      "N": 8,
+      "ranking_key": "nearest",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": -2.9477100824656386
+    },
+    {
+      "N": 8,
+      "ranking_key": "nearest",
+      "gamma": 0.4,
+      "mean_depth": 2.148886666666667,
+      "integrated_mean": 2.151870262390671,
+      "local_derivative_at_zero": -2.9477100824656386
+    },
+    {
+      "N": 8,
+      "ranking_key": "nearest",
+      "gamma": 0.8,
+      "mean_depth": 1.75744,
+      "integrated_mean": 1.758571428571428,
+      "local_derivative_at_zero": -2.9477100824656386
+    },
+    {
+      "N": 8,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": -1.0657182454589498
+    },
+    {
+      "N": 8,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.4,
+      "mean_depth": 2.48504,
+      "integrated_mean": 2.492512454271382,
+      "local_derivative_at_zero": -1.0657182454589498
+    },
+    {
+      "N": 8,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.8,
+      "mean_depth": 2.04826,
+      "integrated_mean": 2.0528141929064394,
+      "local_derivative_at_zero": -1.0657182454589498
+    },
+    {
+      "N": 8,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": -2.7338288508359607
+    },
+    {
+      "N": 8,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.4,
+      "mean_depth": 2.24184,
+      "integrated_mean": 2.2440299720508765,
+      "local_derivative_at_zero": -2.7338288508359607
+    },
+    {
+      "N": 8,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.8,
+      "mean_depth": 1.9474666666666667,
+      "integrated_mean": 1.9516510122060713,
+      "local_derivative_at_zero": -2.7338288508359607
+    },
+    {
+      "N": 8,
+      "ranking_key": "centre_out",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": -0.045764038555363144
+    },
+    {
+      "N": 8,
+      "ranking_key": "centre_out",
+      "gamma": 0.4,
+      "mean_depth": 3.57608,
+      "integrated_mean": 3.5849173585446925,
+      "local_derivative_at_zero": -0.045764038555363144
+    },
+    {
+      "N": 8,
+      "ranking_key": "centre_out",
+      "gamma": 0.8,
+      "mean_depth": 5.0932,
+      "integrated_mean": 5.096783174356456,
+      "local_derivative_at_zero": -0.045764038555363144
+    },
+    {
+      "N": 8,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": 2.072474953429268
+    },
+    {
+      "N": 8,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.4,
+      "mean_depth": 3.0895533333333334,
+      "integrated_mean": 3.0831095110195124,
+      "local_derivative_at_zero": 2.072474953429268
+    },
+    {
+      "N": 8,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.8,
+      "mean_depth": 2.7511466666666666,
+      "integrated_mean": 2.7484893380317335,
+      "local_derivative_at_zero": 2.072474953429268
+    },
+    {
+      "N": 8,
+      "ranking_key": "local_decline",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": -4.953828776887183
+    },
+    {
+      "N": 8,
+      "ranking_key": "local_decline",
+      "gamma": 0.4,
+      "mean_depth": 1.7717733333333334,
+      "integrated_mean": 1.7743831719082996,
+      "local_derivative_at_zero": -4.953828776887183
+    },
+    {
+      "N": 8,
+      "ranking_key": "local_decline",
+      "gamma": 0.8,
+      "mean_depth": 1.5977866666666667,
+      "integrated_mean": 1.5999999999999996,
+      "local_derivative_at_zero": -4.953828776887183
+    },
+    {
+      "N": 8,
+      "ranking_key": "farthest",
+      "gamma": 0.0,
+      "mean_depth": 2.922406666666667,
+      "integrated_mean": 2.9264129465664817,
+      "local_derivative_at_zero": 2.9477100824656386
+    },
+    {
+      "N": 8,
+      "ranking_key": "farthest",
+      "gamma": 0.4,
+      "mean_depth": 5.273306666666667,
+      "integrated_mean": 5.271349208407924,
+      "local_derivative_at_zero": 2.9477100824656386
+    },
+    {
+      "N": 8,
+      "ranking_key": "farthest",
+      "gamma": 0.8,
+      "mean_depth": 7.047293333333333,
+      "integrated_mean": 7.049101958277047,
+      "local_derivative_at_zero": 2.9477100824656386
+    },
+    {
+      "N": 16,
+      "ranking_key": "nearest",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": -3.3204795802529588
+    },
+    {
+      "N": 16,
+      "ranking_key": "nearest",
+      "gamma": 0.4,
+      "mean_depth": 2.949673333333333,
+      "integrated_mean": 2.948992103652544,
+      "local_derivative_at_zero": -3.3204795802529588
+    },
+    {
+      "N": 16,
+      "ranking_key": "nearest",
+      "gamma": 0.8,
+      "mean_depth": 2.4702333333333333,
+      "integrated_mean": 2.46979870951111,
+      "local_derivative_at_zero": -3.3204795802529588
+    },
+    {
+      "N": 16,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": 0.22128291550546833
+    },
+    {
+      "N": 16,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.4,
+      "mean_depth": 3.4520066666666667,
+      "integrated_mean": 3.4534277009294576,
+      "local_derivative_at_zero": 0.22128291550546833
+    },
+    {
+      "N": 16,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.8,
+      "mean_depth": 2.9762066666666667,
+      "integrated_mean": 2.976049342598433,
+      "local_derivative_at_zero": 0.22128291550546833
+    },
+    {
+      "N": 16,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": -3.158240487799934
+    },
+    {
+      "N": 16,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.4,
+      "mean_depth": 3.0229466666666664,
+      "integrated_mean": 3.022385403795505,
+      "local_derivative_at_zero": -3.158240487799934
+    },
+    {
+      "N": 16,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.8,
+      "mean_depth": 2.6091933333333333,
+      "integrated_mean": 2.6098497355684462,
+      "local_derivative_at_zero": -3.158240487799934
+    },
+    {
+      "N": 16,
+      "ranking_key": "centre_out",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": -0.019517021609947522
+    },
+    {
+      "N": 16,
+      "ranking_key": "centre_out",
+      "gamma": 0.4,
+      "mean_depth": 4.457153333333333,
+      "integrated_mean": 4.4556432310065555,
+      "local_derivative_at_zero": -0.019517021609947522
+    },
+    {
+      "N": 16,
+      "ranking_key": "centre_out",
+      "gamma": 0.8,
+      "mean_depth": 6.632626666666667,
+      "integrated_mean": 6.6354699053481685,
+      "local_derivative_at_zero": -0.019517021609947522
+    },
+    {
+      "N": 16,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": 2.4534944363180258
+    },
+    {
+      "N": 16,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.4,
+      "mean_depth": 4.209066666666667,
+      "integrated_mean": 4.205595430876885,
+      "local_derivative_at_zero": 2.4534944363180258
+    },
+    {
+      "N": 16,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.8,
+      "mean_depth": 3.8036,
+      "integrated_mean": 3.8024301440202324,
+      "local_derivative_at_zero": 2.4534944363180258
+    },
+    {
+      "N": 16,
+      "ranking_key": "local_decline",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": -8.584675561343317
+    },
+    {
+      "N": 16,
+      "ranking_key": "local_decline",
+      "gamma": 0.4,
+      "mean_depth": 2.387706666666667,
+      "integrated_mean": 2.3870141462699612,
+      "local_derivative_at_zero": -8.584675561343317
+    },
+    {
+      "N": 16,
+      "ranking_key": "local_decline",
+      "gamma": 0.8,
+      "mean_depth": 2.21118,
+      "integrated_mean": 2.2105333333333324,
+      "local_derivative_at_zero": -8.584675561343317
+    },
+    {
+      "N": 16,
+      "ranking_key": "farthest",
+      "gamma": 0.0,
+      "mean_depth": 3.8498533333333333,
+      "integrated_mean": 3.847527857530677,
+      "local_derivative_at_zero": 3.3204795802529614
+    },
+    {
+      "N": 16,
+      "ranking_key": "farthest",
+      "gamma": 0.4,
+      "mean_depth": 6.840213333333334,
+      "integrated_mean": 6.844784799471659,
+      "local_derivative_at_zero": 3.3204795802529614
+    },
+    {
+      "N": 16,
+      "ranking_key": "farthest",
+      "gamma": 0.8,
+      "mean_depth": 10.92122,
+      "integrated_mean": 10.914918004045575,
+      "local_derivative_at_zero": 3.3204795802529614
+    },
+    {
+      "N": 32,
+      "ranking_key": "nearest",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": -3.5499458103701724
+    },
+    {
+      "N": 32,
+      "ranking_key": "nearest",
+      "gamma": 0.4,
+      "mean_depth": 3.8741666666666665,
+      "integrated_mean": 3.8851888906708116,
+      "local_derivative_at_zero": -3.5499458103701724
+    },
+    {
+      "N": 32,
+      "ranking_key": "nearest",
+      "gamma": 0.8,
+      "mean_depth": 3.317126666666667,
+      "integrated_mean": 3.3267781090812614,
+      "local_derivative_at_zero": -3.5499458103701724
+    },
+    {
+      "N": 32,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": 1.9781880888583256
+    },
+    {
+      "N": 32,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.4,
+      "mean_depth": 4.46688,
+      "integrated_mean": 4.477143999330602,
+      "local_derivative_at_zero": 1.9781880888583256
+    },
+    {
+      "N": 32,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.8,
+      "mean_depth": 3.9301333333333335,
+      "integrated_mean": 3.9374832891015505,
+      "local_derivative_at_zero": 1.9781880888583256
+    },
+    {
+      "N": 32,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": -3.436248472938275
+    },
+    {
+      "N": 32,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.4,
+      "mean_depth": 3.9253533333333333,
+      "integrated_mean": 3.936403945253894,
+      "local_derivative_at_zero": -3.436248472938275
+    },
+    {
+      "N": 32,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.8,
+      "mean_depth": 3.4179133333333334,
+      "integrated_mean": 3.4259919984551086,
+      "local_derivative_at_zero": -3.436248472938275
+    },
+    {
+      "N": 32,
+      "ranking_key": "centre_out",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": -0.009427599046533024
+    },
+    {
+      "N": 32,
+      "ranking_key": "centre_out",
+      "gamma": 0.4,
+      "mean_depth": 5.353326666666667,
+      "integrated_mean": 5.373497797438888,
+      "local_derivative_at_zero": -0.009427599046533024
+    },
+    {
+      "N": 32,
+      "ranking_key": "centre_out",
+      "gamma": 0.8,
+      "mean_depth": 7.65402,
+      "integrated_mean": 7.671812730872616,
+      "local_derivative_at_zero": -0.009427599046533024
+    },
+    {
+      "N": 32,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": 2.9354819516942565
+    },
+    {
+      "N": 32,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.4,
+      "mean_depth": 5.524866666666667,
+      "integrated_mean": 5.528788468354422,
+      "local_derivative_at_zero": 2.9354819516942565
+    },
+    {
+      "N": 32,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.8,
+      "mean_depth": 5.063,
+      "integrated_mean": 5.06946389184367,
+      "local_derivative_at_zero": 2.9354819516942565
+    },
+    {
+      "N": 32,
+      "ranking_key": "local_decline",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": -14.436600795334106
+    },
+    {
+      "N": 32,
+      "ranking_key": "local_decline",
+      "gamma": 0.4,
+      "mean_depth": 2.57688,
+      "integrated_mean": 2.5803116661013643,
+      "local_derivative_at_zero": -14.436600795334106
+    },
+    {
+      "N": 32,
+      "ranking_key": "local_decline",
+      "gamma": 0.8,
+      "mean_depth": 2.4526266666666667,
+      "integrated_mean": 2.456201873048907,
+      "local_derivative_at_zero": -14.436600795334106
+    },
+    {
+      "N": 32,
+      "ranking_key": "farthest",
+      "gamma": 0.0,
+      "mean_depth": 4.861466666666667,
+      "integrated_mean": 4.878331273913915,
+      "local_derivative_at_zero": 3.5499458103701693
+    },
+    {
+      "N": 32,
+      "ranking_key": "farthest",
+      "gamma": 0.4,
+      "mean_depth": 7.811306666666667,
+      "integrated_mean": 7.813986738564221,
+      "local_derivative_at_zero": 3.5499458103701693
+    },
+    {
+      "N": 32,
+      "ranking_key": "farthest",
+      "gamma": 0.8,
+      "mean_depth": 13.847886666666666,
+      "integrated_mean": 13.828496433668477,
+      "local_derivative_at_zero": 3.5499458103701693
+    },
+    {
+      "N": 64,
+      "ranking_key": "nearest",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": -3.544788127208328
+    },
+    {
+      "N": 64,
+      "ranking_key": "nearest",
+      "gamma": 0.4,
+      "mean_depth": 4.94512,
+      "integrated_mean": 4.939638877821596,
+      "local_derivative_at_zero": -3.544788127208328
+    },
+    {
+      "N": 64,
+      "ranking_key": "nearest",
+      "gamma": 0.8,
+      "mean_depth": 4.32884,
+      "integrated_mean": 4.324576315961718,
+      "local_derivative_at_zero": -3.544788127208328
+    },
+    {
+      "N": 64,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": 4.161414937253822
+    },
+    {
+      "N": 64,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.4,
+      "mean_depth": 5.611793333333333,
+      "integrated_mean": 5.595460306362774,
+      "local_derivative_at_zero": 4.161414937253822
+    },
+    {
+      "N": 64,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.8,
+      "mean_depth": 5.011326666666666,
+      "integrated_mean": 4.997449962509261,
+      "local_derivative_at_zero": 4.161414937253822
+    },
+    {
+      "N": 64,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": -3.4705611701421843
+    },
+    {
+      "N": 64,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.4,
+      "mean_depth": 4.977646666666667,
+      "integrated_mean": 4.972784317637162,
+      "local_derivative_at_zero": -3.4705611701421843
+    },
+    {
+      "N": 64,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.8,
+      "mean_depth": 4.395286666666666,
+      "integrated_mean": 4.38970534805884,
+      "local_derivative_at_zero": -3.4705611701421843
+    },
+    {
+      "N": 64,
+      "ranking_key": "centre_out",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": -0.004634057803855453
+    },
+    {
+      "N": 64,
+      "ranking_key": "centre_out",
+      "gamma": 0.4,
+      "mean_depth": 6.33398,
+      "integrated_mean": 6.330645713547173,
+      "local_derivative_at_zero": -0.004634057803855453
+    },
+    {
+      "N": 64,
+      "ranking_key": "centre_out",
+      "gamma": 0.8,
+      "mean_depth": 8.190693333333334,
+      "integrated_mean": 8.195955031531957,
+      "local_derivative_at_zero": -0.004634057803855453
+    },
+    {
+      "N": 64,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": 3.4732048483106435
+    },
+    {
+      "N": 64,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.4,
+      "mean_depth": 7.017573333333333,
+      "integrated_mean": 7.016779206449074,
+      "local_derivative_at_zero": 3.4732048483106435
+    },
+    {
+      "N": 64,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.8,
+      "mean_depth": 6.51868,
+      "integrated_mean": 6.52134563041214,
+      "local_derivative_at_zero": 3.4732048483106435
+    },
+    {
+      "N": 64,
+      "ranking_key": "local_decline",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": -22.680331327285188
+    },
+    {
+      "N": 64,
+      "ranking_key": "local_decline",
+      "gamma": 0.4,
+      "mean_depth": 3.247186666666667,
+      "integrated_mean": 3.2484717676960897,
+      "local_derivative_at_zero": -22.680331327285188
+    },
+    {
+      "N": 64,
+      "ranking_key": "local_decline",
+      "gamma": 0.8,
+      "mean_depth": 3.1439866666666667,
+      "integrated_mean": 3.144069035021415,
+      "local_derivative_at_zero": -22.680331327285188
+    },
+    {
+      "N": 64,
+      "ranking_key": "farthest",
+      "gamma": 0.0,
+      "mean_depth": 5.977166666666666,
+      "integrated_mean": 5.97040248885209,
+      "local_derivative_at_zero": 3.544788127208338
+    },
+    {
+      "N": 64,
+      "ranking_key": "farthest",
+      "gamma": 0.4,
+      "mean_depth": 8.589453333333333,
+      "integrated_mean": 8.57624926493578,
+      "local_derivative_at_zero": 3.544788127208338
+    },
+    {
+      "N": 64,
+      "ranking_key": "farthest",
+      "gamma": 0.8,
+      "mean_depth": 15.73122,
+      "integrated_mean": 15.726123907365034,
+      "local_derivative_at_zero": 3.544788127208338
+    },
+    {
+      "N": 128,
+      "ranking_key": "nearest",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": -3.242715622972213
+    },
+    {
+      "N": 128,
+      "ranking_key": "nearest",
+      "gamma": 0.4,
+      "mean_depth": 6.051346666666666,
+      "integrated_mean": 6.052203847029125,
+      "local_derivative_at_zero": -3.242715622972213
+    },
+    {
+      "N": 128,
+      "ranking_key": "nearest",
+      "gamma": 0.8,
+      "mean_depth": 5.422086666666667,
+      "integrated_mean": 5.421855910890187,
+      "local_derivative_at_zero": -3.242715622972213
+    },
+    {
+      "N": 128,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": 6.634458980193914
+    },
+    {
+      "N": 128,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.4,
+      "mean_depth": 6.756953333333334,
+      "integrated_mean": 6.757243686940096,
+      "local_derivative_at_zero": 6.634458980193914
+    },
+    {
+      "N": 128,
+      "ranking_key": "distant_promotion",
+      "gamma": 0.8,
+      "mean_depth": 6.140113333333334,
+      "integrated_mean": 6.140108182647723,
+      "local_derivative_at_zero": 6.634458980193914
+    },
+    {
+      "N": 128,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": -3.1970340132910966
+    },
+    {
+      "N": 128,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.4,
+      "mean_depth": 6.06858,
+      "integrated_mean": 6.0723620839361026,
+      "local_derivative_at_zero": -3.1970340132910966
+    },
+    {
+      "N": 128,
+      "ranking_key": "adjacent_swaps",
+      "gamma": 0.8,
+      "mean_depth": 5.460753333333333,
+      "integrated_mean": 5.461985069073026,
+      "local_derivative_at_zero": -3.1970340132910966
+    },
+    {
+      "N": 128,
+      "ranking_key": "centre_out",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": -0.002297417563577764
+    },
+    {
+      "N": 128,
+      "ranking_key": "centre_out",
+      "gamma": 0.4,
+      "mean_depth": 7.271626666666666,
+      "integrated_mean": 7.270487216007819,
+      "local_derivative_at_zero": -0.002297417563577764
+    },
+    {
+      "N": 128,
+      "ranking_key": "centre_out",
+      "gamma": 0.8,
+      "mean_depth": 8.383993333333333,
+      "integrated_mean": 8.383831253900386,
+      "local_derivative_at_zero": -0.002297417563577764
+    },
+    {
+      "N": 128,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": 4.012666864428006
+    },
+    {
+      "N": 128,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.4,
+      "mean_depth": 8.593093333333334,
+      "integrated_mean": 8.585244171564188,
+      "local_derivative_at_zero": 4.012666864428006
+    },
+    {
+      "N": 128,
+      "ranking_key": "far_interleaved",
+      "gamma": 0.8,
+      "mean_depth": 8.09716,
+      "integrated_mean": 8.08761283588674,
+      "local_derivative_at_zero": 4.012666864428006
+    },
+    {
+      "N": 128,
+      "ranking_key": "local_decline",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": -33.01635726158526
+    },
+    {
+      "N": 128,
+      "ranking_key": "local_decline",
+      "gamma": 0.4,
+      "mean_depth": 3.90754,
+      "integrated_mean": 3.9096542782193637,
+      "local_derivative_at_zero": -33.01635726158526
+    },
+    {
+      "N": 128,
+      "ranking_key": "local_decline",
+      "gamma": 0.8,
+      "mean_depth": 3.8149266666666666,
+      "integrated_mean": 3.8170543027734327,
+      "local_derivative_at_zero": -33.01635726158526
+    },
+    {
+      "N": 128,
+      "ranking_key": "farthest",
+      "gamma": 0.0,
+      "mean_depth": 7.040466666666667,
+      "integrated_mean": 7.038671184346543,
+      "local_derivative_at_zero": 3.2427156229721996
+    },
+    {
+      "N": 128,
+      "ranking_key": "farthest",
+      "gamma": 0.4,
+      "mean_depth": 9.145806666666667,
+      "integrated_mean": 9.136432916661324,
+      "local_derivative_at_zero": 3.2427156229721996
+    },
+    {
+      "N": 128,
+      "ranking_key": "farthest",
+      "gamma": 0.8,
+      "mean_depth": 14.619393333333333,
+      "integrated_mean": 14.629382850213585,
+      "local_derivative_at_zero": 3.2427156229721996
+    }
+  ]
+}

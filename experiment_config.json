@@ -1,0 +1,21 @@
+{
+  "study": "Spatial ranking and ordered consumer search",
+  "n_sellers": 4,
+  "value_points": 120,
+  "distances": [1, 2, 3, 4],
+  "price_min_points": 20,
+  "price_max_points": 120,
+  "price_step_points": 0.01,
+  "outside_min_points": 49,
+  "outside_max_points": 51,
+  "outside_step_points": 0.01,
+  "outside_assignment": "One independent private draw per ranking-comparison pair; identical type and fee/friction schedule within the pair.",
+  "rankings": {"nearest": [1, 2, 3, 4], "farthest": [4, 3, 2, 1]},
+  "inspection_costs_points": {"low": 1, "high": 4},
+  "gammas": [0, 2, 4],
+  "gamma_probabilities": [0.4, 0.2, 0.4],
+  "search_tie_rule": "Stop when the continuation gain is zero.",
+  "terminal_tie_rule": "Exit when the best transaction surplus is zero; otherwise select the earliest inspected seller among equal positive maxima.",
+  "continuous_reference": "Independent continuous uniform prices on [20,120] and outside options on [49,51]. This is a separate reference model, not the implemented grid.",
+  "payment": {"score_endowment_points": 40, "fixed_euros": 3, "prize_euros": 12, "score_denominator_points": 200, "scored_slots": 24, "unstarted_slot_score": 0}
+}
