@@ -11,6 +11,7 @@ import numpy as np
 from scipy.stats import t as student_t
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
 ROOT_DIR = HERE
 
 
@@ -25,7 +26,7 @@ def import_path(name, path):
 model = import_path("secondary_finite_model", ROOT_DIR / "experiment_model.py")
 reference = import_path("secondary_reference_analysis", ROOT_DIR / "experiment_analysis.py")
 CFG = model.ModelConfig.load()
-BANK = model.PolicyBank.load(ROOT_DIR / "results/calibration/policy_thresholds.npz", CFG)
+BANK = model.PolicyBank.load(ROOT / "results/calibration/policy_thresholds.npz", CFG)
 P, J, L = 150, 24, 144
 ALPHAS = (1., .75, .5, 0.)
 EFFECT_NAMES = ("primary_depth_interaction", "near_depth_4_minus_0", "far_depth_4_minus_0",
