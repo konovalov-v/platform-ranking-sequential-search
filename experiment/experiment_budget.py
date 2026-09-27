@@ -15,6 +15,7 @@ from scipy.stats import t as student_t
 
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
 MODEL_DIR = HERE / ""
 sys.dont_write_bytecode = True
 spec = importlib.util.spec_from_file_location("budget_endpoint40_finite_model", MODEL_DIR / "experiment_model.py")
@@ -22,11 +23,11 @@ model = importlib.util.module_from_spec(spec)
 sys.modules[spec.name] = model
 spec.loader.exec_module(model)
 CFG = model.ModelConfig.load()
-BANK_PATH = MODEL_DIR / "results/calibration/policy_thresholds.npz"
+BANK_PATH = ROOT / "results/calibration/policy_thresholds.npz"
 BANK = model.PolicyBank.load(BANK_PATH, CFG)
 J, STUDY_PAIRS, BASE_CENTS, PRIZE_CENTS, M_H = 24, 150, 300, 1200, 20000
 GAMMA_PROBABILITIES = np.array([.4, .2, .4])
-EXACT_CELLS_PATH = HERE / "results/exact/exact_cells.json"
+EXACT_CELLS_PATH = ROOT / "results/exact/exact_cells.json"
 
 
 def rational_scores_h(prices, u, cost, gamma_index, rank):
@@ -83,7 +84,7 @@ def exact_type_means():
                     assert np.array_equal(policy.stop_state_units, BANK.stop_states[rank, ci, gi, ui])
                     means[rank, ui] += (4000 + int(u) + policy.initial_value_units) * .5 * GAMMA_PROBABILITIES[gi]
                     checked += 1
-    cells = json.loads((MODEL_DIR / "results/calibration/finite_cells.json").read_text())
+    cells = json.loads((ROOT / "results/calibration/finite_cells.json").read_text())
     for rank, name in enumerate(CFG.ranking_names):
         existing = sum(.5 * GAMMA_PROBABILITIES[CFG.data["gammas"].index(c["gamma"])] * (40 + c["consumer_surplus"]) for c in cells if c["ranking"] == name)
         assert abs(means[rank].mean() / 100 - existing) < 1e-10
@@ -91,7 +92,7 @@ def exact_type_means():
     independent = independent_exact_weighted_expectation()
     assert abs(expected - independent["expected_total_euros"]["decimal"]) < 1e-8
     assert abs(expected - 2853.031742089222) < 1e-8
-    summary = json.loads((MODEL_DIR / "results/calibration/payment_summary.json").read_text())
+    summary = json.loads((ROOT / "results/calibration/payment_summary.json").read_text())
     assert np.array_equal(summary["gamma_probabilities"], GAMMA_PROBABILITIES)
     assert abs(expected - 300 * summary["expected_payment_euros"]) < 1e-8
     return means, checked, independent
@@ -208,7 +209,7 @@ def simulate_batch(seed_sequence, n, chunk_size, means_h):
             "moment_distribution": distribution_summary(moment_q)[0]}
 
 
-OUT = HERE / "results/budget"
+OUT = ROOT / "results/budget"
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -271,10 +272,10 @@ def main():
                               "independent pairs; prizes conditionally independent across people given their scores",
                               "no processing, platform, screening, pilot or infrastructure cost in these participant-cash totals",
                               "no real participant data and no actual payments; selected gamma allocation now (0.4,0.2,0.4); fees/prize/N/J unchanged"],
-              "sources_sha256": {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest()
+              "sources_sha256": {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                                  for p in (Path(__file__), EXACT_CELLS_PATH,
                                            MODEL_DIR / "experiment_model.py", MODEL_DIR / "experiment_config.json", BANK_PATH,
-                                           MODEL_DIR / "results/calibration/finite_cells.json", MODEL_DIR / "results/calibration/payment_summary.json")},
+                                           ROOT / "results/calibration/finite_cells.json", ROOT / "results/calibration/payment_summary.json")},
               "checks": checks, "exact_marginal_prize_probabilities_near_far": exact_mu.tolist(),
               "exact_expected_total_euros": float(exact_expected),
               "screening": {"assumed_pass_rate": .8, "expected_screens": 300/.8,
