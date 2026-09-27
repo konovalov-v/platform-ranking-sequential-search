@@ -4,11 +4,12 @@ import json
 from pathlib import Path
 import time
 import numpy as np
-from experiment_model import ModelConfig,FiniteSolver,PolicyBank,payment_summary
-from continuous_model import average_continuous
+from .experiment_model import ModelConfig,FiniteSolver,PolicyBank,payment_summary
+from .continuous_model import average_continuous
 
 HERE=Path(__file__).resolve().parent
-OUT=HERE/'results/calibration'
+ROOT = HERE.parent
+OUT=ROOT/'results/calibration'
 METRICS=['depth','depth_sd','entry_probability','conversion','exit_probability','continuation_after_first',
          'consumer_surplus','search_cost','transport_cost','revenue','welfare',
          'chosen_distance_unconditional','chosen_distance_given_purchase','price_given_purchase']
