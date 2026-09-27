@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
 
 
 def table(caption, label, columns, heading, rows, note):
@@ -21,8 +22,8 @@ def table(caption, label, columns, heading, rows, note):
 
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument('--input',type=Path,default=HERE/'results/power/final_power_results.json')
-    ap.add_argument('--output-dir',type=Path,default=HERE/'results/power/tables')
+    ap.add_argument('--input',type=Path,default=ROOT/'results/power/final_power_results.json')
+    ap.add_argument('--output-dir',type=Path,default=ROOT/'results/power/tables')
     args=ap.parse_args()
     data=json.loads(args.input.read_text())
     assert data['design']['gamma_probabilities']==[.4,.2,.4]
