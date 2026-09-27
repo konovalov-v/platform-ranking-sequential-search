@@ -6,11 +6,11 @@ import json
 from pathlib import Path
 import unittest
 import numpy as np
-from experiment_model import ModelConfig,FiniteSolver,PolicyBank,score_terminal,payment_summary
-from experiment_predictions import assignment_mean_consumer_surplus
+from experiment.experiment_model import ModelConfig,FiniteSolver,PolicyBank,score_terminal,payment_summary
+from experiment.experiment_predictions import assignment_mean_consumer_surplus
 
 HERE=Path(__file__).resolve().parent
-OUT=HERE/'results/calibration'
+OUT=HERE.parent/'results/calibration'
 
 
 class PredictionTests(unittest.TestCase):
@@ -22,7 +22,7 @@ class PredictionTests(unittest.TestCase):
         cls.cells=json.loads((OUT/'finite_cells.json').read_text())
 
     def test_frozen_independent_prior_results(self):
-        prior=json.loads((HERE/'prior_validation_fixture.json').read_text())['cells']
+        prior=json.loads((HERE/'fixtures/prior_validation_fixture.json').read_text())['cells']
         errors=[]
         for reference in prior:
             row=next(x for x in self.cells if all(x[k]==reference[k] for k in ['ranking','cost_label','gamma']))
