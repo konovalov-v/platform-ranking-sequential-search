@@ -13,7 +13,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
-from exact_arithmetic import HERE, solve_integer_policy, propagate_integer_paths
+from .exact_arithmetic import HERE, ROOT, solve_integer_policy, propagate_integer_paths
 
 
 def load_fraction(record):
@@ -89,12 +89,12 @@ def main():
     spec.loader.exec_module(module)
     cfg = module.ModelConfig.load()
     solver = module.FiniteSolver(cfg)
-    bank = module.PolicyBank.load(production / "results/calibration/policy_thresholds.npz", cfg)
-    exact_rows = list(csv.DictReader((HERE / "results/exact/exact_thresholds.csv").open()))
-    saved_rows = list(csv.DictReader((production / "results/calibration/thresholds_by_type.csv").open()))
+    bank = module.PolicyBank.load(ROOT / "results/calibration/policy_thresholds.npz", cfg)
+    exact_rows = list(csv.DictReader((ROOT / "results/exact/exact_thresholds.csv").open()))
+    saved_rows = list(csv.DictReader((ROOT / "results/calibration/thresholds_by_type.csv").open()))
     key = lambda r: (r["ranking"], r["cost_label"], int(r["gamma"]), int(r["outside_units"]))
     saved_map = {key(r): r for r in saved_rows}
-    certificates = {key(r): r for r in json.loads((HERE / "results/exact/state_certificates.json").read_text())}
+    certificates = {key(r): r for r in json.loads((ROOT / "results/exact/state_certificates.json").read_text())}
     policy_states = boundary_checks = 0
     maximum_boundary_gain_error_units = 0.0
     minimum_float_gain_units = float("inf")
@@ -120,8 +120,8 @@ def main():
                     error = abs(float(load_fraction(record)) - policy.gains_units[t, state])
                     maximum_boundary_gain_error_units = max(maximum_boundary_gain_error_units, error)
                     boundary_checks += 1
-    exact_cells = json.loads((HERE / "results/exact/exact_cells.json").read_text())
-    published_cells = json.loads((production / "results/calibration/finite_cells.json").read_text())
+    exact_cells = json.loads((ROOT / "results/exact/exact_cells.json").read_text())
+    published_cells = json.loads((ROOT / "results/calibration/finite_cells.json").read_text())
     cell_key = lambda r: (r["ranking"], r["cost_label"], int(r["gamma"]))
     published_map = {cell_key(r): r for r in published_cells}
     metrics = ["depth", "conversion", "consumer_surplus", "search_cost", "transport_cost", "revenue", "welfare"]
@@ -149,7 +149,7 @@ def main():
     exact_mean_cs = sum(load_fraction(c["expectations"]["consumer_surplus"]) for c in exact_cells) / len(exact_cells)
     exact_prize_probability = (40 + exact_mean_cs) / 200
     exact_payment = 3 + 12 * exact_prize_probability
-    from exact_arithmetic import rational_record
+    from .exact_arithmetic import rational_record
     report = {"toy_validation": toy, "full_policy_states_compared": policy_states,
               "type_stage_thresholds_compared": len(exact_rows) * 4,
               "threshold_mismatches": 0, "policy_mismatches": 0, "raw_float_gain_sign_mismatches": 0,
@@ -164,7 +164,7 @@ def main():
               "elapsed_seconds": time.monotonic() - start,
               "production_model_sha256": hashlib.sha256((production / "experiment_model.py").read_bytes()).hexdigest(),
               "comparison_code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
-    (HERE / "results/exact/comparison_report.json").write_text(json.dumps(report, indent=2) + "\n")
+    (ROOT / "results/exact/comparison_report.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps({k: v for k, v in report.items() if k != "cells"}, indent=2))
 
 
