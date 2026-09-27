@@ -8,14 +8,14 @@ import numpy as np
 from scipy.stats import pearsonr, spearmanr
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / 'results/empirical'
+OUT = HERE.parent / 'results/empirical'
 CLASSES = ('food', 'leisure', 'shopping', 'pharmacy', 'gas_stations')
 METRICS = ('avg_clicks', 'conversion_rate', 'avg_answers_count',
            'avg_bounds_diag_km', 'avg_good_use_rate')
 
 
 def read(name):
-    with (HERE / name).open() as f:
+    with (HERE.parent / 'data' / name).open() as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         for k, v in r.items():
