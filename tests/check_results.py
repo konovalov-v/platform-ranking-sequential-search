@@ -5,7 +5,7 @@ import math
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / 'results'
+OUT = HERE.parent / 'results'
 
 
 def read(path):
@@ -18,7 +18,7 @@ def csv_rows(path):
 
 
 def main():
-    expected = read(HERE / 'paper_values.json')
+    expected = read(HERE / 'fixtures/paper_values.json')
     cells = read(OUT / 'calibration/finite_cells.json')
     thresholds = csv_rows(OUT / 'calibration/thresholds_by_type.csv')
     for table, fields in [('predictions', ['depth','conversion','consumer_surplus']),
