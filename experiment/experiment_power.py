@@ -14,7 +14,7 @@ import numpy as np
 import scipy
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE
+ROOT = HERE.parent
 ROOT_DIR = HERE
 SOURCE = ROOT_DIR/'power_helpers.py'
 spec = importlib.util.spec_from_file_location('final_joint_frozen_power', SOURCE)
@@ -227,7 +227,7 @@ def run_group(name, alphas, concentration, stable_share, repetitions, batch_size
 def source_hashes():
     paths=[SOURCE,ROOT_DIR/'experiment_analysis.py',
            ROOT_DIR/'experiment_model.py',
-           ROOT_DIR/'results/calibration/policy_thresholds.npz']
+           ROOT/'results/calibration/policy_thresholds.npz']
     return {str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 
@@ -238,7 +238,7 @@ def main():
     ap.add_argument('--batch',type=int,default=32)
     ap.add_argument('--base-seed',type=int,default=1710)
     ap.add_argument('--strong-seed',type=int,default=1710)
-    ap.add_argument('--output-dir',type=Path,default=HERE/'results/power')
+    ap.add_argument('--output-dir',type=Path,default=ROOT/'results/power')
     ap.add_argument('--validation-only',action='store_true')
     args=ap.parse_args()
     if min(args.replications,args.strong_replications,args.batch)<2:
