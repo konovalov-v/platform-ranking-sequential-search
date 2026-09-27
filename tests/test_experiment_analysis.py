@@ -11,7 +11,7 @@ import unittest
 import numpy as np
 from scipy.stats import t as student_t
 
-import experiment_analysis as an
+import experiment.experiment_analysis as an
 
 
 def fixture_rows(pairs=24, rounds=3):
