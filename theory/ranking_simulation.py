@@ -587,7 +587,7 @@ def make_figure(results,output_dir,paper_font=False):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output-dir',type=Path,default=Path(__file__).resolve().parent/'results/rankings')
+    parser.add_argument('--output-dir',type=Path,default=Path(__file__).resolve().parents[1]/'results/rankings')
     parser.add_argument('--samples',type=int,default=N_SIMULATIONS)
     parser.add_argument('--grid-points',type=int,default=GRID_POINTS)
     parser.add_argument('--workers',type=int,default=3)
