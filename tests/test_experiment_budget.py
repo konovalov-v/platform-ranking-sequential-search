@@ -4,7 +4,7 @@ import unittest
 
 import numpy as np
 
-import experiment_budget as b
+import experiment.experiment_budget as b
 
 
 class EndpointBudgetTests(unittest.TestCase):
