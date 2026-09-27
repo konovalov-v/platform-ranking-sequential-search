@@ -11,6 +11,7 @@ import numpy as np
 from scipy.stats import t as student_t
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
 SOURCE = HERE / "power_helpers.py"
 spec = importlib.util.spec_from_file_location("joint_null_batch_reference", SOURCE)
 batch_reference = importlib.util.module_from_spec(spec)
@@ -100,7 +101,7 @@ def main():
     parser.add_argument("--replications", type=int, default=10000)
     parser.add_argument("--batch", type=int, default=32)
     parser.add_argument("--seed", type=int, default=1710)
-    parser.add_argument("--output-dir", type=Path, default=HERE / "results/null")
+    parser.add_argument("--output-dir", type=Path, default=ROOT / "results/null")
     args = parser.parse_args()
     if args.replications < 2 or args.batch < 1:
         parser.error("At least two replications and positive batch size required")
@@ -118,7 +119,7 @@ def main():
               "point_observation": "rank-specific person loss independent of every latent outcome and task primitive",
               "null_scope": "Two weak-union boundary branches, one differential-loss boundary, and one wrong-sign interior case",
               "limitations": "Approximate CR2/IUT size in these cases only; not uniform finite-sample validity. Observation-dependent loss is not covered.",
-              "sources_sha256": {str(path.relative_to(HERE)): hashlib.sha256(path.read_bytes()).hexdigest()
+              "sources_sha256": {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
                                   for path in (Path(__file__), SOURCE, HERE / "experiment_analysis.py")},
               "cases": {}}
     arrays = {}
