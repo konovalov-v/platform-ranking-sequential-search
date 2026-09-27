@@ -2,7 +2,7 @@
 import copy
 import hashlib
 import unittest
-from randomisation import CONFIG, Draws, audit, friction_from_ticket, generate, validate
+from experiment.randomisation import CONFIG, Draws, audit, friction_from_ticket, generate, validate
 
 
 class RandomisationTests(unittest.TestCase):
