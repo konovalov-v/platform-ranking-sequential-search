@@ -13,6 +13,7 @@ from fractions import Fraction
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
 CONFIG = HERE / "experiment_config.json"
 
 
@@ -148,7 +149,7 @@ def propagate_integer_paths(upper, distances, fee, gamma, outside, value,
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=CONFIG)
-    parser.add_argument("--out", type=Path, default=HERE / "results/exact")
+    parser.add_argument("--out", type=Path, default=ROOT / "results/exact")
     parser.add_argument("--quick", action="store_true", help="Three endpoint/midpoint types only; smoke test, not full audit.")
     args = parser.parse_args()
     started = time.monotonic()
